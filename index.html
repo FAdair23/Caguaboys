@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Caguaboys</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="mobile-menu.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="wrapper-header">
+    <header class="main-header">
+      <div class="header-desktop">
+        <!-- This will contain the logo, search and cart -->
+        <h1>Caguaboys</h1>
+        <form action="/search" method="get" class="search-bar" role="search">
+          <input type="search" name="search" placeholder="Buscar en la tienda">
+          <button type="submit" class="icon-search"></button>
+        </form>
+        <nav class="sticky-wrapper">
+          <!-- This will contain the links to the page's sections -->
+          <ul class="options">
+            <li class="mr-2">Hombres</li>
+            <li class="mr-2">Mujeres</li>
+            <li class="mr-2">Accesorios</li>
+            <li>Merch</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-mobile">
+        <div class="header-mb-left">
+          <button class="toggle-hamburger" type="button" onclick="toggleHamburger()">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          <span><img src="./assets/img/caguaboys.svg"></span>
+        </div>
+        <a href="#" title="Search Icon" class="icon-search">S</a>
+        <div id="hamburger-menu-container" class="ham-menu-container">
+          <!--todo lo que debe contener el menú aquí-->
+          <ul>
+            <li>Hombres</li>
+            <li>Mujeres</li>
+            <li>Accesorios</li>
+            <li>Merch</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+  </div>
+  <h2>La mejor marca de ropa para boys</h2>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
